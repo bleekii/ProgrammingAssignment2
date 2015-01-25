@@ -1,7 +1,6 @@
 ## cachematrix.R
 ## Functions: makeCacheMatrix
 ##            cacheSolve
-##
 
 
 ## makeCacheMatrix
@@ -11,7 +10,6 @@
 ##
 ##  The initial version of the the list doesn't include the inverse. Use  
 ##  cacheSolve() to solve the inverse.
-##
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
   set <- function(y) {
@@ -31,7 +29,6 @@ makeCacheMatrix <- function(x = matrix()) {
 ##  output: returns the inverse of maxtrix supplied in the input. 
 ##          
 ##  The inverse is only calculated once otherwise a cached version is returned.
-##
 cacheSolve <- function(x, ...) {       
   i <- x$getinverse()
   if(!is.null(i)) {
